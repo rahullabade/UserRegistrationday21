@@ -7,9 +7,9 @@ public class UserRegistrationTest {
     private Assertions Assert;
 
     @Test
-    public void givenPasswordOneNumericWhenShouldReturnTrue() {
+    public void givenPasswordSpecialCharacterWhenShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.passwordOneNumeric();
+        boolean userTest = userRegistration.passwordSpecialCharacter();
         Assert.assertTrue(userTest);
     }
 }
